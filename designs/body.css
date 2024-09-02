@@ -1,0 +1,42 @@
+.content-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  .text-content {
+    flex: 1;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .text-content p {
+    font-size: 16px;
+    margin-top: 20px;
+    line-height: 1.5;
+    text-align: justify;
+  }
+  
+  .image-content {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .image-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .content-container {
+      flex-direction: column;
+    }
+  
+    .text-content p {
+      font-size: 14px;
+    }
+  }
+  

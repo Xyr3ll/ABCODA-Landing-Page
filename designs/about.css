@@ -1,0 +1,53 @@
+/* About Section */
+.about-section {
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.about-section .content-container {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.about-section .text-content,
+.about-section .image-content {
+  flex: 1;
+  max-width: 500px;
+  text-align: center;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.about-section .image-content img {
+  width: 300px;
+  height: 300px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .about-section .content-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-section .text-content,
+  .about-section .image-content {
+    max-width: 100%;
+  }
+
+  .text-content p {
+    text-align: center;
+  }
+
+  .about-section .image-content img {
+    width: 200px;
+    height: 200px;
+  }
+}

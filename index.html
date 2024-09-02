@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>ABCODA Web</title>
+    <link rel="stylesheet" href="designs/body.css" />
+    <link rel="stylesheet" href="designs/home.css" />
+    <link rel="stylesheet" href="designs/header.css" />
+    <link rel="stylesheet" href="designs/about.css" />
+    <link rel="stylesheet" href="designs/login.css" />
+
+  </head>
+  <body>
+    <div class="header" id="header-section">
+      <div class="left-section">
+        <div class="logo">
+          <p id="text-logo">
+            <span class="blooms">Blooms</span><br /><span class="by">By</span>
+            Marra
+          </p>
+        </div>
+      </div>
+      <div class="right-section">
+        <div class="home" id="home-nav">Home</div>
+        <div class="about" id="about-nav">About</div>
+        <button class="log-in-button" id="login-nav">Log-in</button>
+      </div>
+    </div>
+
+    <div class="home-section" id="home-section">
+      <div class="content-container">
+        <div class="text-content">
+          <h1>BLOOMS BY MARRA'S FLOWER SHOP</h1>
+          <p>
+            It sounds like Blooms by Marra Flower Shop has undergone some
+            changes since its inception as Kit Kat's Flower Shop on June 24,
+            2014. Despite starting under a different name, the business has
+            evolved over the years, eventually settling on the name Blooms by
+            Marra Flower Shop as of April 6, 2021.
+          </p>
+        </div>
+        <div class="image-content">
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="home-images/image1.jfif" style="width: 100%" />
+            </div>
+
+            <div class="mySlides fade">
+              <img src="home-images/image2.jfif" style="width: 100%" />
+            </div>
+
+            <div class="mySlides fade">
+              <img src="home-images/image3.jfif" style="width: 100%" />
+            </div>
+
+            <div class="mySlides fade">
+              <img src="home-images/image4.jfif" style="width: 100%" />
+            </div>
+
+            <div class="mySlides fade">
+              <img src="home-images/image5.jfif" style="width: 100%" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-section" id="about-section">
+      <div class="content-container">
+        <div class="image-content">
+          <img
+            src="about-images/image1.jfif"
+            alt="About Image Description"
+            style="width: 100%"
+          />
+        </div>
+        <div class="text-content">
+          <p>
+            It sounds like Blooms by Marra Flower Shop has undergone some
+            changes since its inception as Kit Kat's Flower Shop on June 24,
+            2014. Despite starting under a different name, the business has
+            evolved over the years, eventually settling on the name Blooms by
+            Marra Flower Shop as of April 6, 2021.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="login-overlay" id="login-overlay">
+      <div class="login-container" id="login-container">
+        <h2>Admin</h2>
+        <form>
+          <div class="input-container">
+            <i class="fa fa-user icon"></i>
+            <input type="text" placeholder="Admin" name="admin" required />
+          </div>
+
+          <div class="input-container">
+            <i class="fa fa-key icon"></i>
+            <input
+              type="password"
+              placeholder="Password"
+              name="password"
+              required
+            />
+          </div>
+
+          <button type="submit" class="login-button">Log In</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="interactive/home-slide.js"></script>
+    <script src="interactive/navigation.js"></script>
+  </body>
+</html>
