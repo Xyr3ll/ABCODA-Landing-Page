@@ -1,6 +1,5 @@
-// admin-login.js
-
-import { db } from './database.js';
+import { db } from '../firebase/database.js';
+import { doc, getDoc } from 'https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js';
 
 document.getElementById('login-form').addEventListener('submit', async function(e) {
     e.preventDefault();
@@ -10,14 +9,14 @@ document.getElementById('login-form').addEventListener('submit', async function(
 
     try {
         // Retrieve admin document
-        const docRef = db.collection('admins').doc(admin);
-        const doc = await docRef.get();
+        const docRef = doc(db, 'admins', admin);
+        const docSnap = await getDoc(docRef);
 
-        if (doc.exists) {
+        if (docSnap.exists()) {
             // Compare the hashed password stored in Firestore
-            const storedPassword = doc.data().password;
+            const storedPassword = docSnap.data().password;
 
-            if (storedPassword === password) { // Note: Implement hashing and comparison for security
+            if (storedPassword === password) {
                 // Redirect to the admin panel
                 window.location.href = 'https://xyr3ll.github.io/ABCODA-Admin-Page/';
             } else {

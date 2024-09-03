@@ -20,7 +20,6 @@
     <link rel="stylesheet" href="designs/header.css" />
     <link rel="stylesheet" href="designs/about.css" />
     <link rel="stylesheet" href="designs/login.css" />
-
   </head>
   <body>
     <div class="header" id="header-section">
@@ -101,7 +100,7 @@
     <div class="login-overlay" id="login-overlay">
       <div class="login-container" id="login-container">
         <h2>Admin</h2>
-        <form>
+        <form id="login-form">
           <div class="input-container">
             <i class="fa fa-user icon"></i>
             <input type="text" placeholder="Admin" name="admin" required />
@@ -124,5 +123,9 @@
 
     <script src="interactive/home-slide.js"></script>
     <script src="interactive/navigation.js"></script>
+    <script type="module" src="interactive/firebase/database.js"></script>
+    <script type="module" src="interactive/admin/addAdminAccount.js"></script>
+    <script type="module" src="interactive/admin/admin-login.js"></script>\
+    <script type="module" src="interactive/admin/testFirebase.js"></script>
   </body>
 </html>
