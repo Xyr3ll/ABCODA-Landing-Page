@@ -18,7 +18,7 @@ document.getElementById('login-form').addEventListener('submit', async function(
 
             if (storedPassword === password) {
                 // Redirect to the admin panel
-                window.location.href = 'https://xyr3ll.github.io/ABCODA-Admin-Page/';
+                window.location.href = 'https://abcoda-admin.vercel.app/';
             } else {
                 alert('Invalid password!');
             }
